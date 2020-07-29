@@ -1,0 +1,5 @@
+
+
+$table-top: $header-height + $toolbar-height + $formula-height;
+$table-height: calc(100vh - #{$table-top});
+
