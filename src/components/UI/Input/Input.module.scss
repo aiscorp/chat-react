@@ -1,0 +1,42 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.Input {
+  display: inline-block;
+  position: relative;
+  border: none;
+  outline-style: none;
+  background: transparent;
+
+  &:disabled {
+    background: #ccc;
+    color: #555;
+    cursor: not-allowed;
+  }
+}
+
+.two-line:hover{
+  background: $primary-bg;
+  color: #fff;
+}
+
+.one-line:hover {
+  background: $secondary-bg;
+  color: #fff;
+}
+
+.two-line {
+  color: $primary-color;
+  padding: $primary-height/4 $primary-height/4;
+  height: $primary-height;
+  font-size: $primary-height/2;
+}
+
+.one-line {
+  color: $secondary-color;
+  padding: $secondary-height/4 $secondary-height/4;
+  height: $secondary-height;
+  font-size: $secondary-height/2;
+}
+
+
