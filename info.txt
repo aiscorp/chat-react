@@ -1,0 +1,2 @@
+ // Command for unix systems to set executable flag
+ chmod +x node_modules/.bin/react-scripts

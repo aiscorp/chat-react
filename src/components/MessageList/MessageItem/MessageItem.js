@@ -5,14 +5,15 @@ import {randomColor, url} from '../../../shared/shared.functions'
 // ({userName, content, position, color, imgAvatarUrl, date})
 const MessageItem = props => (
   <div className={classes.MessageItem}>
-    position === "left"
+    props.position === "left"
     ?
     <div className="media w-75 mb-3">
-      <Avatar props.imgAvatarUrl props.userName />
+      <Avatar imgUrl={props.imgAvatarUrl} userName={props.userName} />
       <div className="media-body ml-3">
         <div className="bg-light rounded px-3 py-2 shadow-lg">
           <p className="mb-0 text-muted">{content}</p>
-          <p className="mb-0 small text-muted text-right">{name},&nbsp; {date.toLocaleString("ru", options)}</p>
+          <p className="mb-0 small text-muted text-right">
+              {name},&nbsp; {date.toLocaleString("ru", options)}</p>
         </div>
       </div>
     </div>
@@ -21,7 +22,8 @@ const MessageItem = props => (
       <div className="media-body ml-3">
         <div className="bg-success rounded px-3 py-2 shadow-lg">
           <p className="mb-0 text-light ">{content}</p>
-          <p className="mb-0 small text-light text-right">{name},&nbsp; {date.toLocaleString("ru", options)}</p>
+          <p className="mb-0 small text-light text-right">
+              {name},&nbsp; {date.toLocaleString("ru", options)}</p>
         </div>
 
       </div>

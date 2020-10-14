@@ -4,6 +4,7 @@
 .Input {
   display: inline-block;
   position: relative;
+  padding: 0;
   border: none;
   outline-style: none;
   background: transparent;
@@ -16,26 +17,30 @@
 }
 
 .two-line:hover{
-  background: $primary-bg;
+  //background: $primary-bg;
+  outline: solid 2px $primary-bg;
   color: #fff;
 }
 
 .one-line:hover {
-  background: $secondary-bg;
+  outline: solid 1px $secondary-bg;
   color: #fff;
 }
 
 .two-line {
   color: $primary-color;
-  padding: $primary-height/4 $primary-height/4;
-  height: $primary-height;
-  font-size: $primary-height/2;
+  margin: 2px;
+  height: $primary-height - 4px;
+  font-size: $secondary-height/2;
+  margin-right: auto;
+  width: -webkit-fill-available;
+  resize: none;
 }
 
 .one-line {
   color: $secondary-color;
-  padding: $secondary-height/4 $secondary-height/4;
-  height: $secondary-height;
+  margin: 1px;
+  height: $secondary-height - 2px;
   font-size: $secondary-height/2;
 }
 

@@ -5,7 +5,7 @@ const Input = props => {
   const type = props.type || 'text'
   const cls = [
     classes.Input,
-    classes[type]
+    type === 'text' ? classes['one-line'] : classes['two-line']
   ]
 
   return (

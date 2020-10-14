@@ -1,5 +1,15 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$input-color: #333;
 
+$primary-bg: #007bff;
+$secondary-bg: #6c757d;
+$input-bg: #fff;
 
-$table-top: $header-height + $toolbar-height + $formula-height;
-$table-height: calc(100vh - #{$table-top});
+$primary-height: 48px;
+$secondary-height: 32px;
+$one-line-height: 32px;
+$two-line-height: 48px;
+
+$chat-height: calc(100vh - #{30px});
 
